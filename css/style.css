@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Kalam:700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  background-image: url("../images/The Jungle Liana.svg");
+  background-size: 1450px;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+#title-page {
+  text-align: center;
+}
+
+#title-page h1 {
+  margin-top: 20%;
+  font-family: "Kalam", cursive;
+  font-size: 50px;
+  color: #624a35;
+}
+
+#title-page p {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #447433;
+  border-color: #447433;
+}
+
+.btn-group-lg > .btn,
+.btn-lg {
+  padding: 0.5rem 3rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  letter-spacing: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.menu-items {
+  text-align: center;
+}
+
+.character-choice {
+  background-image: url("../images/Jungle Landscape With Liana Hanging.svg");
+  background-size: 1450px;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+.character-wrapper {
+  margin-top: 60px;
+}
+
+.walter {
+  background-image: url("../images/walter-the-proacher.png");
+  background-size: 360px;
+  height: 500px;
+}
+
+.martha {
+  background-image: url("../images/martha-the-evil-scientist.png");
+  background-size: 360px;
+}
+
+.title-character h3 {
+  font-family: "Kalam", cursive;
+}
+.col-sm h3 {
+  font-family: "Kalam", cursive;
+}
+
+.description-char {
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+
+#back-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+
+.scenario1 {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px 100px;
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+
+.character-fixed {
+  background-image: url("");
+  background-repeat: no-repeat;
+  height: 300px;
+}
