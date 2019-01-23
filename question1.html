@@ -15,30 +15,49 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <video autoplay muted loop id="back-video">
-      <source src="./video/Background Jungle.mp4" type="video/mp4" />
-    </video>
-    <section>
-      <p class="scenario1">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-        voluptate, quas voluptatem dolor similique incidunt, assumenda pariatur
-        quaerat obcaecati a illum velit nobis blanditiis maxime quibusdam
-      </p>
-    </section>
-    <section class="character-fixed"></section>
-    <section class="quizz-area">
-      <div class="img-btn">
-        <div class="img1"></div>
-        <div class="img2"></div>
+  <body class="background-jungle">
+    <script>
+      document.body.className += " fade-out";
+    </script>
+    <!-- SECTION CENTRALE-->
+    <div class="container">
+      <div class="row">
+        <div class="col-4 chosen-character">
+          <img class="img-w" src="./images/walter-the-proacher.png" />
+          <img class="img-m" src="./images/martha-the-evil-scientist.png" />
+        </div>
+        <div class="col-7 ">
+          <!-- scenario-->
+          <div class="row" id="scenario">
+            <h5>SCENARIO</h5>
+            <p class="scenario1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+              voluptate, quas voluptatem dolor similique incidunt, assumenda
+              pariatur quaerat obcaecati a illum velit nobis blanditiis maxime
+              quibusdam
+            </p>
+          </div>
+
+          <!-- quizz area-->
+          <div class="row" id="quizz-area">
+            <div class="col-12 question">
+              Lequel de ces 2 animaux ne représente aucune menace pour l’Homme ?
+            </div>
+
+            <div class="col-5 white-wrapper">
+              <a href="question2.html"><div class="img1"></div></a>
+              <div class="img-legend">Amazonian Giant Centipede</div>
+            </div>
+
+            <div class="col-5 offset-2 white-wrapper">
+              <a href="question2.html"><div class="img2"></div></a>
+              <div class="img-legend">The Harpy Eagle</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit Ad alias
-          dolore?
-        </p>
-      </div>
-    </section>
+    </div>
+
     <!-- JS BOOTSTRAP, jQUERY AND LOCAL LINKS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script

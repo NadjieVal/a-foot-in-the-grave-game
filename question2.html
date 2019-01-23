@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Question 2</title>
+
+    <!-- CSS BOOTSTRAP AND LOCAL LINKS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="background-jungle">
+    <script>
+      document.body.className += " fade-out";
+    </script>
+    <div class="container">
+      <div class="row">
+        <div class="col-4 chosen-character">
+          <img class="img-w" src="./images/walter-the-proacher.png" />
+          <img class="img-m" src="./images/martha-the-evil-scientist.png" />
+        </div>
+        <div class="col-7 ">
+          <!-- scenario-->
+          <div class="row" id="scenario">
+            <h5>SCENARIO</h5>
+            <p class="scenario1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+              voluptate, quas voluptatem dolor similique incidunt, assumenda
+              pariatur quaerat obcaecati a illum velit nobis blanditiis maxime
+              quibusdam
+            </p>
+          </div>
+
+          <!-- quizz area-->
+          <div class="row" id="quizz-area">
+            <div class="col-12 question">
+              Lequel de ces 2 animaux ne représente aucune menace pour l’Homme ?
+            </div>
+
+            <div class="col-5 white-wrapper">
+              <div class="img3"></div>
+              <div class="img-legend">Jaguar</div>
+            </div>
+
+            <div class="col-5 offset-2 white-wrapper">
+              <div class="img2"></div>
+              <div class="img-legend">Assassin Bug</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="you-loose">
+      <div class="popup-window">
+        <div>
+          <p></p>
+          <button type="button" class="btn btn-secondary replay">Replay</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- JS BOOTSTRAP, jQUERY AND LOCAL LINKS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

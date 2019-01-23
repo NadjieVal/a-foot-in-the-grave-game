@@ -15,10 +15,23 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="character-choice">
+    <script>
+      document.body.className += " fade-out";
+    </script>
+    <video autoplay muted loop id="back-video">
+      <source src="./video/jungle background neutral.mp4" type="video/mp4" />
+    </video>
     <div class="container character-wrapper">
       <div class="row">
-        <div class="col-sm menu-items walter title-character">
+        <div class="col-sm menu-items title-character">
           <h3>WALTER</h3>
+          <input
+            class="btn-walter"
+            type="image"
+            id="walter"
+            alt="button-start-game"
+            src="./images/walter-the-proacher.png"
+          />
         </div>
         <div class="col-sm menu-items">
           <h3 class="title-character">CHARACTERS</h3>
@@ -28,13 +41,21 @@
             catch rare specimens for sale on the black market. He is ready for
             the worst.<br /><br />
             Martha is a scientist in need of guinea pigs. She wants to make
-            beautiful catches to finally test the effects of a new virus. As you
-            can see, lovely characters. But the forest is full of surprises.
-            Let's see if our heroes survive. Make your choice 😏.
+            beautiful catches to finally test the effects of a new virus.
+            <br /><br />As you can see, lovely characters. But the forest is
+            full of surprises. Let's see if our heroes survive. Make your choice
+            by clicking on your character 😏.
           </div>
         </div>
-        <div class="col-sm menu-items martha title-character">
+        <div class="col-sm menu-items title-character">
           <h3>MARTHA</h3>
+          <input
+            class="btn-martha"
+            type="image"
+            id="martha"
+            alt="button-start-game"
+            src="./images/martha-the-evil-scientist.png"
+          />
         </div>
       </div>
     </div>
