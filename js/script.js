@@ -4,41 +4,102 @@ $(function() {
 
 // showChoice();
 
-// var btnW = document.querySelector(".btn-walter");
-// var btnM = document.querySelector(".btn-martha");
+var btnW = document.querySelector(".btn-walter");
+var btnM = document.querySelector(".btn-martha");
 
-// $(".btn-walter").click(function() {
-//   localStorage.setItem("choice", "w");
-//   showChoice();
-// });
+$(".btn-walter").click(function() {
+  localStorage.setItem("choice", "w");
+  var imgM = document.querySelector(".btn-martha");
 
-// $(".btn-martha").click(function() {
-//   localStorage.setItem("choice", "m");
-//   showChoice();
-// });
+  imgM.style.visibility = "hidden";
 
-// function showChoice() {
-//   var section = document.querySelector(".chosen-character");
-//   var imgW = document.querySelector(".img-w");
-//   var imgM = document.querySelector(".img-m");
+  showChoice();
+  window.location.href = "question1.html";
+});
 
-//   imgW.style.display = "none";
-//   imgM.style.display = "none";
+$(".btn-martha").click(function() {
+  localStorage.setItem("choice", "m");
+  showChoice();
+  window.location.href = "question1.html";
+});
 
-//   var choice = localStorage.getItem("choice");
+function showChoice() {
+  var section = document.querySelector(".chosen-character");
+  var imgW = document.querySelector("#walter");
+  var imgM = document.querySelector("#martha");
 
-//   switch (choice) {
-//     case "w":
-//       section.style.display = "block";
-//       imgW.style.display = "inline";
-//       break;
+  //imgW.style.display = "none";
+  //imgM.style.display = "none";
 
-//     case "m":
-//       section.style.display = "block";
-//       imgM.style.display = "inline";
-//       break;
-//   }
-// }
+  console.log(imgW);
+
+  var choice = localStorage.getItem("choice");
+
+  switch (choice) {
+    case "w":
+      section.style.display = "block";
+      imgW.style.display = "inline";
+      imgM.style.visibility = "hidden";
+      break;
+
+    case "m":
+      section.style.display = "block";
+      imgM.style.display = "inline";
+      break;
+  }
+}
+
+//window.onload = showChoice();
+
+var scenarAndpopW = [
+  {
+    scenario1W:
+      "Bonjour Walter, bienvenue scenario question 1 après click character walter"
+  },
+  { scenario2W: "scenario question 2 si click mille-pattes question 1" },
+  { scenario3W: "scenario question 2 si click harpy question 1" },
+  {
+    scenario4W: "scenario question 3 si click assassin bug question 2 ",
+    popup1W: "message popup si click jaguar"
+  },
+  {
+    scenario5W: "scenario question 4 si click red bellied piranha question 3 ",
+    popup2W: "message popup si click waxy monkey tree frog"
+  },
+  {
+    scenario6W: "scenario question 5 si click black caiman question 4 ",
+    popup1W: "message popup si click electric eel"
+  },
+  {
+    scenario7W: "scenario question 6 si click bullet ant question 5 ",
+    popup1W: "message popup si click fer-de-lance"
+  }
+];
+
+var scenarAndpopM = [
+  {
+    scenario1W:
+      "Bonjour Martha, bienvenue scenario question 1 après click character martha"
+  },
+  { scenario2W: "scenario question 2 si click mille-pattes question 1" },
+  { scenario3W: "scenario question 2 si click harpy question 1" },
+  {
+    scenario4W: "scenario question 3 si click assassin bug question 2 ",
+    popup1W: "message popup si click jaguar"
+  },
+  {
+    scenario5W: "scenario question 4 si click red bellied piranha question 3 ",
+    popup2W: "message popup si click waxy monkey tree frog"
+  },
+  {
+    scenario6W: "scenario question 5 si click black caiman question 4 ",
+    popup1W: "message popup si click electric eel"
+  },
+  {
+    scenario7W: "scenario question 6 si click bullet ant question 5 ",
+    popup1W: "message popup si click fer-de-lance"
+  }
+];
 
 // Good answers linking to next question pages
 
@@ -117,6 +178,11 @@ $(".replay").click(function() {
 
 //-------------img3--------------
 $(".img3").click(function() {
+  if ($(".title-character h3").hasClass(".walter")) {
+    $("p .scenario2").html("scenario text for walter........");
+  } else if ($(".title-character h3").hasClass(".martha")) {
+    $("p .scenario2").html("scenario text for martha........");
+  }
   replayBox.show();
 });
 //-------------img6--------------

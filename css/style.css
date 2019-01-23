@@ -16,8 +16,11 @@
 
 .end {
   background-image: url("../images/not-today.png");
+  background-size: contain;
   background-repeat: no-repeat;
-  background-size: cover;
+  height: 700px;
+  background-position: center;
+  z-index: 0;
 }
 
 #title-page {
@@ -143,9 +146,9 @@ input {
 .chosen-character img {
   position: absolute;
   max-width: 140px;
-  bottom: -180px;
+  bottom: -50px;
   left: -100px;
-  display: none;
+  /* display: none; */
 }
 
 #quizz-area {
@@ -354,7 +357,7 @@ input {
   width: 700px;
   height: 400px;
   position: fixed;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   color: #015a92;
   border-radius: 5px;
   left: 50%;
