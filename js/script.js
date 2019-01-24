@@ -21,10 +21,12 @@ $(".input-m").click(function() {
   window.location.href = "question1.html";
 });
 
+// CHARACTER SELECTION, IF ONE IS DISPLAYED, THE OTHER ONE ISN'T
+
 function showChoice() {
-  var section = document.querySelector(".chosen-character"); //value not read !!!!
-  var imgW = document.querySelector(".img-w"); //value not read !!!!
-  var imgM = document.querySelector(".img-m"); //value not read !!!!
+  var section = document.querySelector(".chosen-character"); //value never read !!!!
+  var imgW = document.querySelector(".img-w"); //value never read !!!!
+  var imgM = document.querySelector(".img-m"); //value never read !!!!
 
   $(".img-w").css("display", "none");
   $(".img-m").css("display", "none");
@@ -44,7 +46,7 @@ function showChoice() {
   }
 }
 
-// OBJECTS FOR PERSONALISED CHARACTERS
+// OBJECTS FOR PERSONALISED CHARACTERS AND SCENARIO
 
 var scenarAndpopW = {
   //question1
@@ -201,7 +203,7 @@ $(document).ready(function() {
   $(".flex-header, .flex-middle").css({ opacity: "0.1" });
 });
 
-// PERSONALIZED SCENARIO DISPLAYED
+// SCENARIO AFTER ONLY ONE GOOD ANSWER
 
 function showScenario(scenario) {
   var choice = localStorage.getItem("choice");
@@ -219,6 +221,8 @@ function showScenario(scenario) {
 }
 showScenario();
 
+// PERSONALIZED SCENARIO DISPLAYED AFTER TWO GOOD ANSWERS
+
 function checkAnswer(questionName) {
   var scenario = localStorage.getItem(questionName);
   var choice = localStorage.getItem("choice");
@@ -228,3 +232,4 @@ function checkAnswer(questionName) {
     $(".scenar").html(scenarAndpopM[scenario + "M"]);
   }
 }
+//the function is called directly in the html in the page after the two good answer were possible
