@@ -2,163 +2,143 @@ $(function() {
   $("body").removeClass("fade-out");
 });
 
-// showChoice();
+// CHOICE CHARACTER AND LOCAL STORAGE SAVING
 
-var btnW = document.querySelector(".btn-walter");
-var btnM = document.querySelector(".btn-martha");
+showChoice();
 
-$(".btn-walter").click(function() {
+var btnW = document.querySelector(".input-w");
+var btnM = document.querySelector(".input-m");
+
+$(".input-w").click(function() {
   localStorage.setItem("choice", "w");
-  var imgM = document.querySelector(".btn-martha");
-
-  imgM.style.visibility = "hidden";
-
   showChoice();
   window.location.href = "question1.html";
 });
 
-$(".btn-martha").click(function() {
+$(".input-m").click(function() {
   localStorage.setItem("choice", "m");
   showChoice();
   window.location.href = "question1.html";
 });
 
 function showChoice() {
-  var section = document.querySelector(".chosen-character");
-  var imgW = document.querySelector("#walter");
-  var imgM = document.querySelector("#martha");
+  var section = document.querySelector(".chosen-character"); //value not read !!!!
+  var imgW = document.querySelector(".img-w"); //value not read !!!!
+  var imgM = document.querySelector(".img-m"); //value not read !!!!
 
-  //imgW.style.display = "none";
-  //imgM.style.display = "none";
-
-  console.log(imgW);
+  $(".img-w").css("display", "none");
+  $(".img-m").css("display", "none");
 
   var choice = localStorage.getItem("choice");
 
   switch (choice) {
     case "w":
-      section.style.display = "block";
-      imgW.style.display = "inline";
-      imgM.style.visibility = "hidden";
+      $("section").css("display", "block");
+      $(".img-w").css("display", "inline");
       break;
 
     case "m":
-      section.style.display = "block";
-      imgM.style.display = "inline";
+      $("section").css("display", "block");
+      $(".img-m").css("display", "inline");
       break;
   }
 }
 
-//window.onload = showChoice();
+// OBJECTS FOR PERSONALISED CHARACTERS
 
-var scenarAndpopW = [
-  {
-    scenario1W:
-      "Bonjour Walter, bienvenue scenario question 1 après click character walter"
-  },
-  { scenario2W: "scenario question 2 si click mille-pattes question 1" },
-  { scenario3W: "scenario question 2 si click harpy question 1" },
-  {
-    scenario4W: "scenario question 3 si click assassin bug question 2 ",
-    popup1W: "message popup si click jaguar"
-  },
-  {
-    scenario5W: "scenario question 4 si click red bellied piranha question 3 ",
-    popup2W: "message popup si click waxy monkey tree frog"
-  },
-  {
-    scenario6W: "scenario question 5 si click black caiman question 4 ",
-    popup1W: "message popup si click electric eel"
-  },
-  {
-    scenario7W: "scenario question 6 si click bullet ant question 5 ",
-    popup1W: "message popup si click fer-de-lance"
-  }
-];
+var scenarAndpopW = {
+  //question1
+  scenario1W:
+    "Bonjour Walter, bienvenue scenario question 1 après click character walter",
 
-var scenarAndpopM = [
-  {
-    scenario1W:
-      "Bonjour Martha, bienvenue scenario question 1 après click character martha"
-  },
-  { scenario2W: "scenario question 2 si click mille-pattes question 1" },
-  { scenario3W: "scenario question 2 si click harpy question 1" },
-  {
-    scenario4W: "scenario question 3 si click assassin bug question 2 ",
-    popup1W: "message popup si click jaguar"
-  },
-  {
-    scenario5W: "scenario question 4 si click red bellied piranha question 3 ",
-    popup2W: "message popup si click waxy monkey tree frog"
-  },
-  {
-    scenario6W: "scenario question 5 si click black caiman question 4 ",
-    popup1W: "message popup si click electric eel"
-  },
-  {
-    scenario7W: "scenario question 6 si click bullet ant question 5 ",
-    popup1W: "message popup si click fer-de-lance"
-  }
-];
+  //question2
+  scenario2W: "scenario question 2 si click mille-pattes question 1",
+  scenario3W: "scenario question 2 si click harpy question 1",
+  popup1W: "message popup si click jaguar signé W",
 
-// Good answers linking to next question pages
+  //question3
+  scenario4W: "scenario question 3 si click assassin bug question 2 ",
+
+  //question4
+  scenario5W: "scenario question 4 si click red bellied piranha question 3 ",
+  scenario6W: "scenario question 4 si click waxy monkey tree frog question 3",
+
+  //question5
+  scenario7W: "scenario question 5 si click black caiman question 4 ",
+  popup2W: "message popup si click electric eel signé W",
+
+  //question6
+  scenario8W: "scenario question 6 si click bullet ant question 5 ",
+  popup3W: "message popup si click fer-de-lance signé W"
+};
+
+var scenarAndpopM = {
+  //question1
+  scenario1M:
+    "Bonjour Martha, bienvenue scenario question 1 après click character martha",
+
+  //question2
+  scenario2M: "scenario question 2 si click mille-pattes question 1",
+  scenario3M: "scenario question 2 si click harpy question 1",
+
+  //question3
+  scenario4M: "scenario question 3 si click assassin bug question 2 ",
+  popup1M: "message popup si click jaguar signé M",
+
+  //question4
+  scenario5M: "scenario question 4 si click red bellied piranha question 3 ",
+  scenario6M: "scenario question 4 si click waxy monkey tree frog question 3",
+
+  //question5
+  scenario7M: "scenario question 5 si click black caiman question 4 ",
+  popup2M: "message popup si click electric eel signé M",
+
+  //question6
+  scenario8M: "scenario question 6 si click bullet ant question 5 ",
+  popup3M: "message popup si click fer-de-lance signé M"
+};
+
+// CLICK FROM HOME PAGE TO CHARACTER PAGE
 
 $(".btn").click(function() {
   window.location.href = "character.html";
 });
 
+// CLICK GOOD ANSWERS LINKING TO NEXT PAGE WITH SCENARIO PERSONALIZED
+
 $(".img1").click(function() {
+  localStorage.setItem("question2", "scenario2");
   window.location.href = "question2.html";
-  if ($(".title-character h3").hasClass(".walter")) {
-    $("p .scenario2").html("scenario text for walter........");
-  } else if ($(".title-character h3").hasClass(".martha")) {
-    $("p .scenario2").html("scenario text for martha........");
-  }
 });
 
 $(".img2").click(function() {
+  localStorage.setItem("question2", "scenario3");
   window.location.href = "question2.html";
-  if ($(".title-character h3").hasClass(".walter")) {
-    $("p .scenario2").html("scenario text for walter........");
-  } else if ($(".title-character h3").hasClass(".martha")) {
-    $("p .scenario2").html("scenario text for martha........");
-  }
 });
 
 $(".img4").click(function() {
+  localStorage.setItem("question3", "scenario4");
   window.location.href = "question3.html";
-  if ($(".title-character h3").hasClass(".walter")) {
-    $("p .scenario3").html("scenario text for walter........");
-  } else if ($(".title-character h3").hasClass(".martha")) {
-    $("p .scenario3").html("scenario text for martha........");
-  }
 });
 
 $(".img5").click(function() {
+  localStorage.setItem("question4", "scenario5");
   window.location.href = "question4.html";
-  if ($(".title-character h3").hasClass(".walter")) {
-    $("p .scenario4").html("scenario text for walter........");
-  } else if ($(".title-character h3").hasClass(".martha")) {
-    $("p .scenario4").html("scenario text for martha........");
-  }
+});
+
+$(".img6").click(function() {
+  localStorage.setItem("question4", "scenario6");
+  window.location.href = "question4.html";
 });
 
 $(".img8").click(function() {
+  localStorage.setItem("question5", "scenario7");
   window.location.href = "question5.html";
-  if ($(".title-character h3").hasClass(".walter")) {
-    $("p .scenario5").html("scenario text for walter........");
-  } else if ($(".title-character h3").hasClass(".martha")) {
-    $("p .scenario5").html("scenario text for martha........");
-  }
 });
 
 $(".img9").click(function() {
+  localStorage.setItem("question6", "scenario8");
   window.location.href = "question6.html";
-  if ($(".title-character h3").hasClass(".walter")) {
-    $("p .scenario6").html("scenario text for walter........");
-  } else if ($(".title-character h3").hasClass(".martha")) {
-    $("p .scenario6").html("scenario text for martha........");
-  }
 });
 
 $(".img11").click(function() {
@@ -168,7 +148,8 @@ $(".img11").click(function() {
 $(".img12").click(function() {
   window.location.href = "end-game.html";
 });
-// Wrong answers Pop Up showing
+
+// POP UP WRONG ANSWER, YOU DEAD !
 
 var replayBox = $(".you-loose");
 replayBox.hide();
@@ -176,51 +157,74 @@ $(".replay").click(function() {
   window.location.href = "character.html";
 });
 
-//-------------img3--------------
+//-------------img3 JAGUAR--------------
 $(".img3").click(function() {
-  if ($(".title-character h3").hasClass(".walter")) {
-    $("p .scenario2").html("scenario text for walter........");
-  } else if ($(".title-character h3").hasClass(".martha")) {
-    $("p .scenario2").html("scenario text for martha........");
+  var choice = localStorage.getItem("choice");
+  if (choice === "w") {
+    $(".popup-window p").html(scenarAndpopW.popup1W);
+  } else if (choice === "m") {
+    $(".popup-window p").html(scenarAndpopM.popup1M);
   }
   replayBox.show();
 });
-//-------------img6--------------
-$(".img6").click(function() {
-  replayBox.show();
-});
-//-------------img7--------------
+
+//-----------img7 ELECTRIC EEL-----------
+
 $(".img7").click(function() {
+  var choice = localStorage.getItem("choice");
+  if (choice === "w") {
+    $(".popup-window p").html(scenarAndpopW.popup2W);
+  } else if (choice === "m") {
+    $(".popup-window p").html(scenarAndpopM.popup2M);
+  }
   replayBox.show();
 });
-//-------------img10--------------
+
+//--------img10 FER-DE-LANCE SNAKE---------
+
 $(".img10").click(function() {
+  var choice = localStorage.getItem("choice");
+  if (choice === "w") {
+    $(".popup-window p").html(scenarAndpopW.popup3W);
+  } else if (choice === "m") {
+    $(".popup-window p").html(scenarAndpopM.popup3M);
+  }
   replayBox.show();
 });
 
-// Wrong answer Pop Up Message
-
-$(".im3").click(function() {
-  if ($(".title-character h3").hasClass(".walter")) {
-    $(".popup-window p").html(
-      "A jaguar? You have too much ambition my friend!"
-    );
-  } else if ($(".title-character h3").hasClass(".martha")) {
-    $(".popup-window p").html("A jaguar? As a guinea pig! How dare you!");
-  }
-});
-
-$(".im6").click(function() {
-  if ($(".title-character h3").hasClass(".walter")) {
-    $(".popup-window p").html("funny message pour lui");
-  } else if ($(".title-character h3").hasClass(".martha")) {
-    $(".popup-window p").html("funny message pour elle");
-  }
-});
+// POP UP SETTINGS
 
 $(document).ready(function() {
-  // Show the popup
+  // Popup showing
   $(".popup-window").css({ display: "block" });
   // Background is less opaque
   $(".flex-header, .flex-middle").css({ opacity: "0.1" });
 });
+
+// PERSONALIZED SCENARIO DISPLAYED
+
+function showScenario(scenario) {
+  var choice = localStorage.getItem("choice");
+  if (choice === "w") {
+    $(".scenario1").html(scenarAndpopW.scenario1W);
+    $(".scenario3").html(scenarAndpopW.scenario4W);
+    $(".scenario5").html(scenarAndpopW.scenario7W);
+    $(".scenario6").html(scenarAndpopW.scenario8W);
+  } else if (choice === "m") {
+    $(".scenario1").html(scenarAndpopM.scenario1M);
+    $(".scenario3").html(scenarAndpopM.scenario4M);
+    $(".scenario5").html(scenarAndpopM.scenario7M);
+    $(".scenario6").html(scenarAndpopM.scenario8M);
+  }
+}
+showScenario();
+
+function checkAnswer(questionName) {
+  var scenario = localStorage.getItem(questionName);
+  var choice = localStorage.getItem("choice");
+  if (choice === "w") {
+    $(".scenar").html(scenarAndpopW[scenario + "W"]);
+  } else if (choice === "m") {
+    $(".scenar").html(scenarAndpopM[scenario + "M"]);
+  }
+}
