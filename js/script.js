@@ -67,9 +67,9 @@ var scenarAndpopW = {
 
   //question4
   scenario5W:
-    "Wrong ! The piranha lives is the water of the Amazon jungle. Alone it's not a danger but a school of piranha is another story. The red-bellied piranhas are not always aggressive towards humans. Piranha attacks on humans are rare. However, in the dry season when food is scarce, they may attack even human. Lucky we're not in dry season. But there's other creatures in the water too late, you can't run.",
+    "Wrong ! The piranha lives is the water of the Amazon jungle. Alone it's not a danger but a school of piranhas is another story. The red-bellied piranhas are not always aggressive towards humans. Piranha attacks on humans are rare. However, in the dry season when food is scarce, they may attack even human. Lucky we're not in dry season. But there's other creatures in the water too late, you can't run.",
   scenario6W:
-    "Nice catch ! The Waxy Monkey Tree frog lives mainly in the relatively dry warm temperate forests, where the temperature can reach 35 °. It is not an animal of the Amazon, and it does not appreciate a too humid atmosphere. You can sell her to pharmaceutical companies. She secretes a wax to protect her body like a sun screen cream. Unfortunately, with your attention on your catch, you didn't see the other creatures in the water. Too late, you can't run. ",
+    "Nice catch ! The Waxy Monkey Tree frog lives mainly in the relatively dry warm temperate forests, where the temperature can reach 35 °. It is not an animal of the Amazon, and it does not appreciate a too humid atmosphere. You can sell it to pharmaceutical companies. It secretes a wax to protect it's body like a sun screen cream. Unfortunately, with your attention on your catch, you didn't see the other creatures in the water. Too late, you can't run.",
 
   //question5
   scenario7W:
@@ -90,25 +90,34 @@ var scenarAndpopM = {
     "Hello Martha, welcome to the Amazon rainforest. Your quest starts here. You have to find at all cost the perfect animal for your experiences. An unexpeted found. But you know the forest is treacherous and appearances are deceptive. Make the right choices, your life depends on it.",
 
   //question2
-  scenario2M: "scenario question 2 si click mille-pattes question 1",
+  scenario2M:
+    "I thought you were a scientist? You knowledge is not impressive for now. You chose the most harmful of both. Luckily, the bite of the centipede is only painful. You limp but you'll survive. The forest is dense and noisier than we think. This is why you did not see them. Both of them are 'danger",
   scenario3M:
-    "scenario question 2 si click harpy question 1. Je dois avouer que tu es plutot intelligente. tu ne craignais rien de la harpie. elle ne reprsente un danger que pour les enfants qu'elle pourrait facilement enlever",
+    "I must admit that you are pretty smart. You feared nothing from the harpy. It represents a danger only for children. It's a nice piece but not for your experience. You need something more rare or unusual don't you. On your way, you realize how dense and noisier the forest is. This is why you did not see the danger lurking behind the trees.",
 
   //question3
-  scenario4M: "scenario question 3 si click assassin bug question 2 ",
-  popup1M: "message popup si click jaguar signé M",
+  scenario4M:
+    "Good choice. I can see you want to live. Even if 'live' seems compromise. The assassin bug stung you and infected you with the Chagas disease. You're now sick even if you don't feel anything. But it's your lucky day. An unexpected animal appears! ",
+  popup1M:
+    "A jaguar, Martha ? Really ? LOL, for what ? Jaguars have the most powerful bite than any other big cats including tigers and lions. Their bite is strong enough to pierce through the shell or skull of animals. It makes them one of the deadliest animals of Amazon rainforest. You wanted to feed it with viruses but now you feed it with you flesh.",
 
   //question4
-  scenario5M: "scenario question 4 si click red bellied piranha question 3 ",
-  scenario6M: "scenario question 4 si click waxy monkey tree frog question 3",
+  scenario5M:
+    "You're not a real scientist! Because how could you chose this. The piranha lives is the water of the Amazon jungle. The red-bellied piranhas are not always aggressive towards humans. However, in the dry season when food is scarce, they may attack even human. Lucky we're not in dry season. But there's other creatures in the water too late, you can't run.",
+  scenario6M:
+    "Here you found your new specimen ! This frog here? it's rare. The Waxy Monkey Tree frog lives mainly in the relatively dry warm temperate forests, where the temperature can reach 35 °. It is not an animal of the Amazon, and it does not appreciate a too humid atmosphere. It secretes a wax to protect it's body like a sun screen cream. Unfortunately, with your attention on your catch, you didn't see the other creatures in the water. Too late, you can't run. ",
 
   //question5
-  scenario7M: "scenario question 5 si click black caiman question 4 ",
-  popup2M: "message popup si click electric eel signé M",
+  scenario7M:
+    "You find yourself on the ground crawling to go to an open area. Your leg trembles with the loss of your foot. Yeah, you didn't think you could get away with it after a fight with a caiman huh! You're not even a fighter. A caiman less than 4 meters is not a danger for a man. But he can still hurt. But cramwling on the ground of the Amazon forest is not a good idea either. You're facing two Nightmares.",
+  popup2M:
+    "In real life, without guns and other weapons, humans are not at the top of the food chain . This fish has three unique organs that work together to generate electricity. Many humans have suffered shocks from electric eels, though they rarely die. Often, death only occurs with multiple shocks or when the victim is too paralyzed to move and ends up drowning. And this is exactly what happened to you.",
 
   //question6
-  scenario8M: "scenario question 6 si click bullet ant question 5 ",
-  popup3M: "message popup si click fer-de-lance signé M"
+  scenario8M:
+    "You are really in a bad shape. You do not even stand up anymore. The sting from a bullet ant is perhaps the most painful insect sting ever known to humans. Venom-filled sting from a bullet ant would feel like being shot.  It causes intense pain, burning and swelling. The pain of bullet ant sting will last for 24 hours. But this forest has not said her last word yet. Frighten you scream, and annoy and scare 2 small things. ",
+  popup3M:
+    "Hmmm Martha... it's a snake..., everyone can't be Indiana Jones! If you see a snake, just run! This snake has an unpredictable temperand their venom destroys red blood cells, and is particularly lethal and fast acting. Treatment is possible if the victim receives medical attention soon enough. But because you're alone in the middle of the rainforest..."
 };
 
 // CLICK FROM HOME PAGE TO CHARACTER PAGE
