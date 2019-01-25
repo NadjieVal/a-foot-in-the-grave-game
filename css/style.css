@@ -46,6 +46,12 @@
   border-color: #447433;
 }
 
+.btn-primary:hover {
+  color: #fff;
+  background-color: #385f29;
+  border-color: #447433;
+}
+
 .btn-group-lg > .btn,
 .btn-lg {
   padding: 0.5rem 3rem;
@@ -57,7 +63,7 @@
 
 body {
   opacity: 1;
-  transition: 4s opacity;
+  transition: 3s opacity;
   background-color: transparent;
 }
 body.fade-out {
@@ -90,15 +96,20 @@ input {
   object-fit: contain;
 }
 
+.title-character {
+  color: white;
+}
+
 .title-character h3 {
   font-family: "Kalam", cursive;
+  color: white;
 }
 .col-sm h3 {
   font-family: "Kalam", cursive;
 }
 
 .description-char {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.8);
   color: black;
   border-radius: 10px;
   padding: 20px;
@@ -146,9 +157,8 @@ input {
 .chosen-character img {
   position: absolute;
   max-width: 140px;
-  bottom: -50px;
-  left: -100px;
-  /* display: none; */
+  bottom: -40px;
+  left: -50px;
 }
 
 #quizz-area {
@@ -354,11 +364,11 @@ input {
 }
 
 .popup-window {
-  width: 700px;
-  height: 400px;
+  width: 730px;
+  height: 500px;
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #015a92;
+  background-color: #121818;
+  box-shadow: 0 20px 100px rgba(44, 4, 4, 0.5);
   border-radius: 5px;
   left: 50%;
   top: 50%;
@@ -366,4 +376,34 @@ input {
   text-align: center;
   z-index: 1;
   padding: 30px;
+  color: white;
+  padding: 20px;
+  background-image: url("../images/blood.png");
+  background-repeat: no-repeat;
+}
+
+.popup-window img {
+  width: 56px;
+  height: auto;
+}
+
+.popup-window p {
+  padding: 0 50px 30px;
+  font-size: 16px;
+  opacity: 0.5;
+  letter-spacing: 0.5px;
+}
+
+.popup-window h2 {
+  font-size: 50px;
+  padding: 20px;
+}
+
+.replay {
+  width: 227px;
+  height: 69px;
+  border-radius: 100px;
+  background-color: #232929;
+  border: none;
+  padding-bottom: 10px;
 }

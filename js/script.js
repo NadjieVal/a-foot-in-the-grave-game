@@ -51,37 +51,45 @@ function showChoice() {
 var scenarAndpopW = {
   //question1
   scenario1W:
-    "Bonjour Walter, bienvenue scenario question 1 après click character walter",
+    " Hello Walter, welcome to the Amazon rainforest. Your quest starts here. You must recover by any means a rare animal or insect that you can sell at a high price. The forest is treacherous and appearances are deceptive. Make the right choices, your life depends on it.",
 
   //question2
-  scenario2W: "scenario question 2 si click mille-pattes question 1",
-  scenario3W: "scenario question 2 si click harpy question 1",
-  popup1W: "message popup si click jaguar signé W",
+  scenario2W:
+    "It seems you didn't watch National Geographic a lot huh? You chose the most harmful of both. Luckily, the bite of the centipede is only painful. You limp but you'll survive. The forest is dense and noisier than we think. This is why you did not see them. Both of them are 'danger'. ",
+  scenario3W:
+    "Good choice, the harpy is a danger only for children. And it's a beautiful piece. You'll have a good price if you can leave this forest alive. On your way, you realize how dense and noisier the forest is. This is why you did not see the danger lurking behind the trees.",
+  popup1W:
+    "A jaguar, all by yourself ? LOL you have too much ambition my friend. Jaguars have the most powerful bite than any other big cats including tigers and lions. Their bite is strong enough to pierce through the shell or skull of animals. It makes them one of the deadliest animals of Amazon rainforest. The jaguar you wanted to dismember is actually enjoying your dead body.",
 
   //question3
-  scenario4W: "scenario question 3 si click assassin bug question 2 ",
+  scenario4W:
+    "Waou ! You chose your life instead of money. You'd be dead by now if not. Happy to see you alive. Even if 'alive' is a big word. The assassin bug stung you and infected you with the Chagas disease. You're now sick even if you don't feel anything. But it's your lucky day. An unexpected animal appears!",
 
   //question4
   scenario5W: "scenario question 4 si click red bellied piranha question 3 ",
   scenario6W: "scenario question 4 si click waxy monkey tree frog question 3",
 
   //question5
-  scenario7W: "scenario question 5 si click black caiman question 4 ",
-  popup2W: "message popup si click electric eel signé W",
+  scenario7W:
+    "scenario question 5 si click black caiman question 4. tu te retrouve au sol a ramper après pour te diriger vers un point dégagé.  ",
+  popup2W:
+    "I don't know if you learnt the effect of electricity in water but now I'm pretty sure you know. This fish has three unique organs that work together to generate electricity. Many humans have suffered shocks from electric eels, though they rarely die. Often, death only occurs with multiple shocks or when the victim is too paralyzed to move and ends up drowning. And this is exactly what happened to you.",
 
   //question6
   scenario8W: "scenario question 6 si click bullet ant question 5 ",
-  popup3W: "message popup si click fer-de-lance signé W"
+  popup3W:
+    "Listen Walter, everyone can't be Indiana Jones! If you see a snake, just run dude! This snake has an unpredictable temper, making it responsible for most of the snakebites in its range. Their venom destroys red blood cells, and is particularly lethal and fast acting. Treatment is possible if the victim receives medical attention soon enough. But because you're alone in the middle of the rainforest..."
 };
 
 var scenarAndpopM = {
   //question1
   scenario1M:
-    "Bonjour Martha, bienvenue scenario question 1 après click character martha",
+    "Hello Martha, welcome to the Amazon rainforest. Your quest starts here. You have to find at all cost the perfect animal for your experiences. An unexpeted found. But you know the forest is treacherous and appearances are deceptive. Make the right choices, your life depends on it.",
 
   //question2
   scenario2M: "scenario question 2 si click mille-pattes question 1",
-  scenario3M: "scenario question 2 si click harpy question 1",
+  scenario3M:
+    "scenario question 2 si click harpy question 1. Je dois avouer que tu es plutot intelligente. tu ne craignais rien de la harpie. elle ne reprsente un danger que pour les enfants qu'elle pourrait facilement enlever",
 
   //question3
   scenario4M: "scenario question 3 si click assassin bug question 2 ",
