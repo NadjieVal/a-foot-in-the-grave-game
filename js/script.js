@@ -66,17 +66,20 @@ var scenarAndpopW = {
     "Waou ! You chose your life instead of money. You'd be dead by now if not. Happy to see you alive. Even if 'alive' is a big word. The assassin bug stung you and infected you with the Chagas disease. You're now sick even if you don't feel anything. But it's your lucky day. An unexpected animal appears!",
 
   //question4
-  scenario5W: "scenario question 4 si click red bellied piranha question 3 ",
-  scenario6W: "scenario question 4 si click waxy monkey tree frog question 3",
+  scenario5W:
+    "Wrong ! The piranha lives is the water of the Amazon jungle. Alone it's not a danger but a school of piranha is another story. The red-bellied piranhas are not always aggressive towards humans. Piranha attacks on humans are rare. However, in the dry season when food is scarce, they may attack even human. Lucky we're not in dry season. But there's other creatures in the water too late, you can't run.",
+  scenario6W:
+    "Nice catch ! The Waxy Monkey Tree frog lives mainly in the relatively dry warm temperate forests, where the temperature can reach 35 °. It is not an animal of the Amazon, and it does not appreciate a too humid atmosphere. You can sell her to pharmaceutical companies. She secretes a wax to protect her body like a sun screen cream. Unfortunately, with your attention on your catch, you didn't see the other creatures in the water. Too late, you can't run. ",
 
   //question5
   scenario7W:
-    "scenario question 5 si click black caiman question 4. tu te retrouve au sol a ramper après pour te diriger vers un point dégagé.  ",
+    "You find yourself on the ground crawling to go to an open area. Your leg trembles with the loss of your foot. Yeah, you didn't think you could get away with it after a fight with a caiman huh! A caiman less than 4 meters is not a danger for a man. But he can still hurt. But cramwling on the ground of the Amazon forest is not a good idea either. You're facing two Nightmares.",
   popup2W:
-    "I don't know if you learnt the effect of electricity in water but now I'm pretty sure you know. This fish has three unique organs that work together to generate electricity. Many humans have suffered shocks from electric eels, though they rarely die. Often, death only occurs with multiple shocks or when the victim is too paralyzed to move and ends up drowning. And this is exactly what happened to you.",
+    "I don't know if you learnt the effect of electricity in water but I'm pretty sure NOW you know 😂 . This fish has three unique organs that work together to generate electricity. Many humans have suffered shocks from electric eels, though they rarely die. Often, death only occurs with multiple shocks or when the victim is too paralyzed to move and ends up drowning. And this is exactly what happened to you.",
 
   //question6
-  scenario8W: "scenario question 6 si click bullet ant question 5 ",
+  scenario8W:
+    "You are really in a bad shape. You do not even stand up anymore. The sting from a bullet ant is perhaps the most painful insect sting ever known to humans. Venom-filled sting from a bullet ant would feel like being shot.  It causes intense pain, burning and swelling. Typically, the pain of bullet ant sting will last for 24 hours. But this forest has not said her last word yet. Your hiccups of surprise frighten, and annoy and scare 2 small things.",
   popup3W:
     "Listen Walter, everyone can't be Indiana Jones! If you see a snake, just run dude! This snake has an unpredictable temper, making it responsible for most of the snakebites in its range. Their venom destroys red blood cells, and is particularly lethal and fast acting. Treatment is possible if the victim receives medical attention soon enough. But because you're alone in the middle of the rainforest..."
 };

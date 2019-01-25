@@ -63,7 +63,7 @@
 
 body {
   opacity: 1;
-  transition: 3s opacity;
+  transition: 4s opacity;
   background-color: transparent;
 }
 body.fade-out {
@@ -82,7 +82,7 @@ html {
   background-image: url("../images/jungle.jpg");
   background-size: 1450px;
   background-repeat: no-repeat;
-  height: 700px;
+  height: 750px;
   background-position: center;
   z-index: 0;
 }
