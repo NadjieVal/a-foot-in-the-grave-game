@@ -11,7 +11,7 @@
   background-image: url("../images/The Jungle Liana.svg");
   background-size: 1450px;
   background-repeat: no-repeat;
-  height: 700px;
+  height: 100vh;
 }
 
 .end {
@@ -82,7 +82,7 @@ html {
   background-image: url("../images/jungle.jpg");
   background-size: 1450px;
   background-repeat: no-repeat;
-  height: 750px;
+  height: 100vh;
   background-position: center;
   z-index: 0;
 }
@@ -141,7 +141,7 @@ input {
 #scenario p {
   width: 960px;
   margin: 0 auto;
-  color: gray;
+  color: lightgray;
   font-size: 14px;
 }
 .character-fixed img {
